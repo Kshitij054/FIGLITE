@@ -1,4 +1,13 @@
-export const COLORS = ["#DC2626", "#D97706", "#059669", "#7C3AED", "#DB2777"];
+export const COLORS = [
+  "#DC2626",
+  "#D97706",
+  "#059669",
+  "#7C3AED",
+  "#DB2777",
+  "#2563EB",
+  "#0891B2",
+  "#EA580C",
+];
 
 export const shapeElements = [
   {
