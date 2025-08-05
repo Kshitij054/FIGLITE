@@ -8,13 +8,16 @@ import {
   ModifyShape,
 } from "@/types/type";
 
+// Default fill used for new shapes
+const DEFAULT_FILL = "#6366f1";
+
 export const createRectangle = (pointer: PointerEvent) => {
   const rect = new fabric.Rect({
     left: pointer.x,
     top: pointer.y,
     width: 100,
     height: 100,
-    fill: "#aabbcc",
+    fill: DEFAULT_FILL,
     objectId: uuidv4(),
   } as CustomFabricObject<fabric.Rect>);
 
@@ -27,7 +30,7 @@ export const createTriangle = (pointer: PointerEvent) => {
     top: pointer.y,
     width: 100,
     height: 100,
-    fill: "#aabbcc",
+    fill: DEFAULT_FILL,
     objectId: uuidv4(),
   } as CustomFabricObject<fabric.Triangle>);
 };
@@ -37,7 +40,7 @@ export const createCircle = (pointer: PointerEvent) => {
     left: pointer.x,
     top: pointer.y,
     radius: 100,
-    fill: "#aabbcc",
+    fill: DEFAULT_FILL,
     objectId: uuidv4(),
   } as any);
 };
@@ -57,7 +60,7 @@ export const createText = (pointer: PointerEvent, text: string) => {
   return new fabric.IText(text, {
     left: pointer.x,
     top: pointer.y,
-    fill: "#aabbcc",
+    fill: "#ffffff",
     fontFamily: "Helvetica",
     fontSize: 36,
     fontWeight: "400",

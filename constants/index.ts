@@ -88,8 +88,11 @@ export const directionOptions = [
 
 export const fontFamilyOptions = [
   { value: "Helvetica", label: "Helvetica" },
+  { value: "Inter", label: "Inter" },
   { value: "Times New Roman", label: "Times New Roman" },
+  { value: "Georgia", label: "Georgia" },
   { value: "Comic Sans MS", label: "Comic Sans MS" },
+  { value: "Courier New", label: "Courier New" },
   { value: "Brush Script MT", label: "Brush Script MT" },
 ];
 
