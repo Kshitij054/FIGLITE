@@ -84,6 +84,8 @@ export const defaultNavElement = {
 export const directionOptions = [
   { label: "Bring to Front", value: "front", icon: "/assets/front.svg" },
   { label: "Send to Back", value: "back", icon: "/assets/back.svg" },
+  { label: "Forward", value: "forward", icon: "/assets/front.svg" },
+  { label: "Backward", value: "backward", icon: "/assets/back.svg" },
 ];
 
 export const fontFamilyOptions = [
@@ -207,5 +209,30 @@ export const shortcuts = [
     key: "4",
     name: "Reactions",
     shortcut: "E",
+  },
+  {
+    key: "5",
+    name: "Copy",
+    shortcut: "⌘ + C",
+  },
+  {
+    key: "6",
+    name: "Paste",
+    shortcut: "⌘ + V",
+  },
+  {
+    key: "7",
+    name: "Delete",
+    shortcut: "Del",
+  },
+  {
+    key: "8",
+    name: "Scale Up",
+    shortcut: "⌘ + =",
+  },
+  {
+    key: "9",
+    name: "Scale Down",
+    shortcut: "⌘ + -",
   },
 ];
