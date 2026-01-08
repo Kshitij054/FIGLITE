@@ -148,7 +148,29 @@ Open [http://localhost:3000](http://localhost:3000) in your browser. Open a seco
 
 ---
 
-## 📜 Scripts
+## � Deployment
+
+### Deploy on Vercel (recommended)
+
+1. Push the repository to GitHub.
+2. Import the project on [Vercel](https://vercel.com/new).
+3. Add the environment variable `NEXT_PUBLIC_LIVEBLOCKS_PUBLIC_KEY` in the Vercel dashboard under **Settings → Environment Variables**.
+4. Click **Deploy** — Vercel will handle the build automatically.
+
+### Deploy on other platforms
+
+```bash
+npm run build
+npm run start
+```
+
+Ensure the `NEXT_PUBLIC_LIVEBLOCKS_PUBLIC_KEY` environment variable is present in the runtime environment.
+
+> **Note:** The canvas uses `fabric.js` which requires a browser environment. Server-side rendering is disabled for the canvas page — this is handled automatically via `next/dynamic`.
+
+---
+
+## �📜 Scripts
 
 | Command | Description |
 |---|---|
